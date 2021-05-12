@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="it.archiver.Controller_Files.Controller_send_stage">
+    <bottom>
+        <HBox id="bottom_root" onMouseDragged="#drag_move" onMousePressed="#press_move" prefHeight="41.0"
+              prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER_RIGHT">
+            <children>
+                <MFXButton id="button" onMouseClicked="#clicked_select" prefHeight="25.0" prefWidth="65.0" text="Select"
+                           textFill="WHITE">
+                    <font>
+                        <Font name="Times New Roman" size="12.0"/>
+                    </font>
+                </MFXButton>
+                <MFXButton id="button" fx:id="cancel" onAction="#press_cancel" prefHeight="25.0" prefWidth="65.0"
+                           text="Cancel" textFill="WHITE">
+                    <font>
+                        <Font name="Times New Roman" size="12.0"/>
+                    </font>
+                </MFXButton>
+            </children>
+            <BorderPane.margin>
+                <Insets/>
+            </BorderPane.margin>
+            <padding>
+                <Insets left="440.0" top="9.0"/>
+            </padding>
+        </HBox>
+    </bottom>
+    <center>
+        <AnchorPane id="center_root" prefHeight="379.0" prefWidth="600.0" style="-fx-background-color: transparent;"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <Text fx:id="best" layoutX="303.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="the best..." wrappingWidth="103.3236083984375">
+                    <font>
+                        <Font name="Times New Roman Italic" size="18.0"/>
+                    </font>
+                </Text>
+                <Text fx:id="name" layoutX="211.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="CondaZip">
+                    <font>
+                        <Font name="Times New Roman Italic" size="37.0"/>
+                    </font>
+                </Text>
+                <ListView id="tree" fx:id="listview" fixedCellSize="20.0" prefHeight="359.0" prefWidth="600.0"
+                          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                          AnchorPane.topAnchor="0.0"/>
+                <MaterialDesignIconView id="refresh" fx:id="replay" glyphName="REPLAY" layoutX="517.0" layoutY="35.0"
+                                        onMouseClicked="#click_replay" rotate="270.0" size="24"/>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+            </BorderPane.margin>
+        </AnchorPane>
+    </center>
+</BorderPane>

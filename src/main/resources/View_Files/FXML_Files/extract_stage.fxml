@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXCheckbox?>
+<AnchorPane fx:id="root" prefHeight="420.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.archiver.Controller_Files.Controller_extract_stage">
+    <children>
+        <TabPane prefHeight="420.0" prefWidth="450.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Genreal">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="420.0" prefWidth="450.0">
+                            <children>
+                                <Text fill="WHITE" layoutX="35.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="Destination path(will be Created id dose not exist):">
+                                    <font>
+                                        <Font name="System Bold" size="12.0"/>
+                                    </font>
+                                </Text>
+                                <MFXButton fx:id="browseButton" layoutX="383.0" layoutY="88.0"
+                                           onMouseClicked="#click_browse_button" prefHeight="25.0" prefWidth="26.0"
+                                           style="-fx-background-color: #2c505e;" text="..." textFill="WHITE"/>
+                                <MFXTextField fx:id="textField" layoutX="35.0" layoutY="83.0" prefHeight="25.0"
+                                              prefWidth="337.0"/>
+                                <!--focusColor="#0f9d58"-->
+                                <Text fill="WHITE" layoutX="36.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="Update mode:">
+                                    <font>
+                                        <Font name="System Bold" size="12.0"/>
+                                    </font>
+                                </Text>
+                                <Text fill="WHITE" layoutX="35.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="Extract option:">
+                                    <font>
+                                        <Font name="System Bold" size="12.0"/>
+                                    </font>
+                                </Text>
+                                <MFXButton layoutX="232.0" layoutY="328.0" onMouseClicked="#click_ok_button"
+                                           prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #0B6D54;"
+                                           text="OK" textFill="WHITE"/>
+                                <MFXButton layoutX="332.0" layoutY="328.0" onMouseClicked="#click_cancel_button"
+                                           prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #2c505e;"
+                                           text="Cancel" textFill="WHITE"/>
+                                <MFXCheckbox fx:id="deleteArchivesAfterExtraction" layoutX="35.0" layoutY="176.0"
+                                             text="Delete Archive after extraction" textFill="WHITE"/>
+                                <MFXCheckbox fx:id="extractInNewFolder" layoutX="260.0" layoutY="211.0"
+                                             text="Extract in new folder" textFill="WHITE"/>
+                                <MFXCheckbox fx:id="extractToOriginalPath" layoutX="260.0" layoutY="176.0"
+                                             onMouseClicked="#extractToOriginalPath_licked"
+                                             text="Extract to orginal path" textFill="WHITE"/>
+                                <MFXCheckbox fx:id="openOutputPath" layoutX="35.0" layoutY="211.0"
+                                             text="Open output path after finishing" textFill="WHITE"/>
+                                <ComboBox fx:id="mode" layoutX="145.0" layoutY="260.0" prefHeight="25.0"
+                                          prefWidth="205.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Advanced">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

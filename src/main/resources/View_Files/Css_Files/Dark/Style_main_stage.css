@@ -1,0 +1,131 @@
+#general_root{
+    -fx-background-color:white;
+}
+#left_label{
+    -fx-background-color:black;
+}
+#right_label{
+    -fx-background-color:black,white,white;
+    -fx-background-insets: 0px 0px 0px 0px, 500px -200px -500px -200px, -500px -200px 500px -200px;
+    -fx-background-radius: 0px 0px 0px 0px, 500px 500px 0px 0px, 0px 0px 500px 500px;
+}
+
+
+#icon_button_light{
+ -fx-image:url("/View_Files/Css_Files/Icons/about.png");
+ }
+#icon_button_paper{
+ -fx-image:url("/GUI/Css_Files/Icons/extract.png");
+}
+#icon_button_file{
+ -fx-image:url("/GUI/Css_Files/Icons/archive.png");
+}
+#icon_button_search{
+  -fx-image:url("/GUI/Css_Files/Icons/search.png");
+}
+#icon_button_share{
+   -fx-image:url("/GUI/Css_Files/Icons/share.png");
+}
+#icon_button_setting{
+   -fx-image:url("/GUI/Css_Files/Icons/settings.png");
+}
+
+
+
+#button_light{
+    -fx-background-color: #176277 ,black;
+    -fx-background-insets: 0px 0px 0px 0px,0px 120px 0px -1px;
+    -fx-background-radius: 0px 0px 0px 0px,0px 90px 90px 0px;
+    -fx-border-insets: 0px 0px 0px 0px,0px 90px 0px 0px;
+}
+#button_light:hover{
+-fx-translate-x: -34px;
+}
+
+#label_paper{
+-fx-background-color:#c04851;
+-fx-background-radius:20px 10px 20px 10px;
+}
+#button_paper{
+    -fx-background-color: #d95459,#c04851;
+    -fx-background-insets: 0px 0px 0px 0px,0px 120px 0px -1px;
+    -fx-background-radius: 0px 0px 0px 0px,0px 90px 90px 0px;
+    -fx-border-insets: 0px 0px 0px 0px,0px 90px 0px 0px;
+}
+#button_paper:hover{
+-fx-translate-x: -20px;
+}
+#label_file{
+-fx-background-color:#fdaf18;
+-fx-background-radius:20px 10px 20px 10px;
+}
+#button_file{
+    -fx-background-color: #fed403,#fdaf18;
+    -fx-background-insets: 0px 0px 0px 0px,0px 120px 0px -1px;
+    -fx-background-radius: 0px 0px 0px 0px,0px 90px 90px 0px;
+    -fx-border-insets: 0px 0px 0px 0px,0px 90px 0px 0px;
+}
+#button_file:hover{
+-fx-translate-x: -20px;
+}
+#label_search{
+-fx-background-color:#df7c27;
+-fx-background-radius:20px 10px 20px 10px;
+}
+#button_search{
+    -fx-background-color: #f49924,#df7c27;
+    -fx-background-insets: 0px 0px 0px 0px,0px 120px 0px -1px;
+    -fx-background-radius: 0px 0px 0px 0px,0px 90px 90px 0px;
+    -fx-border-insets: 0px 0px 0px 0px,0px 90px 0px 0px;
+}
+#button_search:hover{
+-fx-translate-x: -20px;
+}
+#label_share{
+-fx-background-color:#336774;
+-fx-background-radius:20px 10px 20px 10px;
+}
+#button_share{
+    -fx-background-color: #4787a2,#336774;
+    -fx-background-insets: 0px 0px 0px 0px,0px 120px 0px -1px;
+    -fx-background-radius: 0px 0px 0px 0px,0px 90px 90px 0px;
+    -fx-border-insets: 0px 0px 0px 0px,0px 90px 0px 0px;
+}
+#button_share:hover{
+-fx-translate-x: -20px;
+}
+#label_setting{
+-fx-background-color:#2982be;
+-fx-background-radius:20px 10px 20px 10px;
+ }
+ #button_setting{
+     -fx-background-color: #3f98d2,#2982be;
+     -fx-background-insets: 0px 0px 0px 0px,0px 120px 0px -1px;
+     -fx-background-radius: 0px 0px 0px 0px,0px 90px 90px 0px;
+     -fx-border-insets: 0px 0px 0px 0px,0px 90px 0px 0px;
+ }
+ #button_setting:hover{
+ -fx-translate-x: -20px;
+ }
+
+ #close{
+ -fx-fill:white;
+ }
+
+ #min{
+ -fx-fill:white;
+ }
+
+#close:hover{
+-fx-fill:red;
+-fx-scale-x:1.1;
+-fx-scale-y:1.1;
+}
+#min:hover{
+-fx-fill:gray;
+-fx-scale-x:1.1;
+-fx-scale-y:1.1;
+}
+#rt{
+-fx-fill:white;
+}

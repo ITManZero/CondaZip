@@ -1,0 +1,11 @@
+.label:hover{
+-fx-border-width:2px;
+-fx-border-color:gold;
+}
+.jfx-text-field{-fx-text-inner-color: white;}
+
+#root{
+-fx-background-color:#192d36;
+-fx-border-width:2px;
+-fx-border-color:gold;
+}

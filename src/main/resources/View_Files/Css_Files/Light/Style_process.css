@@ -1,0 +1,9 @@
+.jfx-progress-bar:indeterminate .track{
+    -fx-background-color:transparent;
+}
+
+#root{-fx-background-color:#192d36;}
+
+
+
+

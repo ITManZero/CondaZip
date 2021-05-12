@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="se" fx:id="root" prefHeight="270.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.archiver.Controller_Files.Controller_Share_Stage">
+    <children>
+        <Rectangle fx:id="sq" arcHeight="30.0" arcWidth="30.0" fill="#0b6d54" height="60.0" layoutX="5.0" layoutY="185.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="0.0" width="60.0" x="10.0" y="10.0" />
+        <MFXButton fx:id="sendButton" alignment="TOP_LEFT" disable="true" layoutX="271.0" layoutY="54.0" mnemonicParsing="false" onMouseClicked="#clicked_sendButton" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #2c505e;" text="Send" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Italic" size="12.0" />
+            </font>
+            <graphic>
+                <MaterialDesignIconView glyphName="SEND" />
+            </graphic>
+        </MFXButton>
+        <MFXButton fx:id="receiveButton" alignment="TOP_LEFT" disable="true" layoutX="271.0" layoutY="123.0" mnemonicParsing="false" onMouseClicked="#clicked_receiveButton" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #2c505e;" text="Recieve" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Italic" size="12.0" />
+            </font>
+            <graphic>
+                <MaterialDesignIconView glyphName="CALL_RECEIVED" size="14" />
+            </graphic>
+        </MFXButton>
+        <Hyperlink layoutX="289.0" layoutY="235.0" text="Privacy Police">
+            <font>
+                <Font name="Times New Roman Bold" size="12.0" />
+            </font>
+        </Hyperlink>
+        <Pane id="be" fx:id="rootPane" onMouseDragged="#drag_move" onMousePressed="#press_move" prefHeight="183.0" prefWidth="232.0">
+            <children>
+                <Text id="te" fx:id="name" fill="#a44c4c" layoutX="19.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CondaZip">
+                    <font>
+                        <Font name="Times New Roman Italic" size="37.0" />
+                    </font>
+                </Text>
+                <Text fx:id="best" fill="#ff5050" layoutX="128.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="the best..." wrappingWidth="103.3236083984375">
+                    <font>
+                        <Font name="Times New Roman Italic" size="18.0" />
+                    </font>
+                </Text>
+                <!--                <FontAwesomeIconView glyphName="FILE_ZIP_ALT" layoutX="187.0" layoutY="49.0" size="36" text="" />-->
+                <MFXProgressBar fx:id="progress" layoutY="147.0" prefWidth="232.0" />
+                <Text fx:id="testAfterProgress" fill="#45544a" layoutX="19.0" layoutY="151.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to DCZT Service ..">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <MaterialDesignIconView />
+        <MaterialDesignIconView id="cl" fill="WHITE" glyphName="CLOSE" layoutX="342.0" layoutY="35.0" onMouseClicked="#press_close" size="24" />
+    </children>
+</AnchorPane>

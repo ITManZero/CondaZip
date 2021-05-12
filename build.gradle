@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'org.beryx.jlink' version '2.23.6'
+}
+
+javafx {
+    version = "13"
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.swing']
+}
+
+group 'it.man'
+version '1.1.2'
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation group: 'net.java.dev.jna', name: 'jna-platform', version: '5.5.0'
+    compile 'de.jensd:fontawesomefx-commons:9.1.2'
+    compile 'de.jensd:fontawesomefx-controls:9.1.2'
+    compile 'de.jensd:fontawesomefx-materialdesignfont:2.0.26-9.1.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
+    implementation 'io.github.palexdev:materialfx:11.10.1'
+
+}
+
+jlink {
+    addExtraDependencies("javafx")
+    forceMerge('log4j-api')
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    launcher {
+        name = 'Main'
+    }
+}
+
+
+mainClassName = 'it.archiver.FakeMain'
+

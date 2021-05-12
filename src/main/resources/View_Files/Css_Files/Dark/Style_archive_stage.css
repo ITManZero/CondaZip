@@ -1,0 +1,96 @@
+.tab-pane:top .tab-content-area{
+-fx-background-color:black;
+}
+.tab-pane:top .tab-header-area .tab-header-background{
+-fx-background-color:white;
+}
+.tab-pane:top .tab-header-area .headers-region{
+    -fx-background-color: transparent;
+    -fx-border-width:0;
+}
+.tab-pane:top .tab-header-area .headers-region .tab:top .tab-container{
+    -fx-background-color: transparent;
+}
+.tab-pane:top .tab-header-area .headers-region .tab:top{
+    -fx-background-color: transparent;
+    -fx-border-width:0 0 0 0;
+    -fx-border-color:black;
+    -fx-min-height: 10px;
+    -fx-min-width: 30px;
+}
+.tab-pane:top .tab-header-area .headers-region .tab:selected:top{
+    -fx-background-color: black;
+    -fx-border-width:1 1 1 1;
+    -fx-border-color:black;
+    -fx-padding:-2 0.5 -2 0.5;
+    -fx-min-height: 10px;
+    -fx-min-width: 30px;
+}
+.tab-pane:top .tab-header-area .headers-region .tab:top .tab-container .tab-label .text{
+    -fx-fill: wheat;
+}
+.tab-pane:top .tab-header-area .headers-region .tab:selected:top .tab-container .tab-label .text{
+    -fx-fill: white;
+
+}
+#ratio_button{
+-jfx-selected-color:#0f9d58;
+}
+#setting_buttons{
+-fx-background-color:#2c505e;
+}
+.combo-box{
+-fx-background-color:white,white,white,white;
+-fx-background-insets:0px 0px 0px 0px,0px 0px 0px 0px,0px 0px 0px 0px,0px 0px 0px 0px;
+-fx-background-radius:0px 0px 0px 0px,0px 0px 0px 0px,0px 0px 0px 0px,0px 0px 0px 0px;
+}
+.combo-box .list-view{
+-fx-background-color:#2b2b2b,#2b2b2b;
+-fx-background-insets:0px 0px 0px 0px,0px 0px 0px 0px;
+}
+.combo-box .list-cell:focused:filled:selected{
+-fx-background-color:white,white,white,white;
+-fx-background-insets:0px 0px 0px 0px,0px 0px 0px 0px,0px 0px 0px 0px,0px 0px 0px 0px;
+-fx-background-radius:0px 0px 0px 0px,0px 0px 0px 0px,0px 0px 0px 0px,0px 0px 0px 0px;
+-fx-text-fill:#2b2b2b;
+}
+.combo-box .list-cell:filled{
+ -fx-background-color:#2b2b2b;
+  -fx-text-fill:white;
+ }
+ .combo-box .list-cell:filled:hover{
+ -fx-background-color:white;
+ -fx-text-fill:#2b2b2b;
+ }
+ .combo-box .arrow-button{
+ -fx-background-color:white,white,white,white;
+ -fx-background-insets:0px 0px 0px 0px,0px 0px 0px 0px,0px 0px 0px 0px,0px 0px 0px 0px;
+ -fx-padding:0.5em 0.6em 0.5em 0.8em;
+ }
+
+.combo-box .list-view .virtual-flow .scroll-bar:vertical .thumb{
+-fx-background-color:#cdcdcd,#cdcdcd,#cdcdcd;
+-fx-background-insets:0px 0px 0px 0px,0px 0px 0px 0px,0px 0px 0px 0px;
+-fx-background-radius:0px 0px 0px 0px,0px 0px 0px 0px,0px 0px 0px 0px;
+}
+.combo-box .list-view .virtual-flow .scroll-bar:vertical{
+-fx-background-color:white,white;
+-fx-background-insets:0px 0px 0px 0px,0px 0px 0px 0px;
+-fx-padding:0px 0px 0px 0px;
+
+}
+.combo-box .list-view .virtual-flow .scroll-bar:vertical .thumb:pressed{
+-fx-background-color:#2b2b2b,#2b2b2b,#2b2b2b;
+}
+
+.jfx-text-field
+{
+    -fx-text-inner-color: #4d4d4d;
+
+}
+
+.jfx-text-field:focused
+{
+    -fx-text-inner-color: #0f9d58;
+
+}
