@@ -13,12 +13,12 @@ public class FakeMain {
         String[] filesPath = null;
 //        args = new String[]{"0", "C:\\Users\\lovef\\Desktop\\دراسة.docx"};
 //        args = new String[]{"5", "C:\\Users\\lovef\\Desktop\\دراسة.tar"};
-//        if (args.length > 0) {
-//            filesPath = new String[args.length - 1];
-//            flag = Integer.parseInt(args[0]);
-//            for (int i = 1; i < args.length; i++)
-//                filesPath[i - 1] = args[i];
-//        }
+        if (args.length > 0) {
+            filesPath = new String[args.length - 1];
+            flag = Integer.parseInt(args[0]);
+            for (int i = 1; i < args.length; i++)
+                filesPath[i - 1] = args[i];
+        }
         switch (flag) {
             case 0:
                 Engine.main(filesPath);
